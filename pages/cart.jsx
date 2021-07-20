@@ -40,7 +40,7 @@ const Cart = () => {
               }
           <ContinueShoppingButton />
         </div>
-        <OrderSummary cart={cart} total={total} />
+        <OrderSummary dispatch={dispatch} auth={auth} cart={cart} total={total} />
       </div>
     </div>
   )
