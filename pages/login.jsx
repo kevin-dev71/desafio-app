@@ -2,8 +2,6 @@ import { useRouter } from 'next/router'
 import { useState, useContext, useEffect } from "react"
 import {DataContext} from '../store/globalState'
 import Cookie from 'js-cookie'
-
-import valid from '../utils/valid'
 import {postData} from '../utils/fetchData'
 import { ACTIONS } from '../store/actions'
 

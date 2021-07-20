@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    "BASE_URL": "http://localhost:8080"
+    "BASE_URL": "https://desafio-api-99784.herokuapp.com"
   },
   reactStrictMode: true,
   images: {

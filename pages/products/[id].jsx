@@ -2,13 +2,12 @@ import Head from 'next/head'
 import { useState, useContext } from 'react'
 import { getData } from '../../utils/fetchData'
 import { DataContext } from '../../store/globalState'
-// import { addToCart } from '../../store/actions'
+import Image from 'next/image'
 
 const DetailProduct = (props) => {
     const [product] = useState(props.product)
 
     const { state, dispatch } = useContext(DataContext)
-    const { cart } = state
 
     return(
         <div className="row detail_page">
@@ -16,7 +15,7 @@ const DetailProduct = (props) => {
                 <title>Product detail</title>
             </Head>
         {product.name}
-        <img src={product.imgUrl} alt="" />
+        <Image src={product.imgUrl} alt="" />
             
         </div>
     )

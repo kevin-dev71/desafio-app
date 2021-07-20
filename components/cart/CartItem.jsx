@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { decrease, increase } from "../../store/actions"
 import Modal from '../Modal'
+import Image from 'next/image'
 
 const CartItem = ({ item, dispatch, cart }) => {
   const [modal, setModal] = useState(false)
@@ -19,7 +20,7 @@ const CartItem = ({ item, dispatch, cart }) => {
         {" "}
         {/* product */}
         <div className="w-20">
-          <img
+          <Image
             className="h-24"
             src={item.imgUrl}
           />

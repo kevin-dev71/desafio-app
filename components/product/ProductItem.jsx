@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { useContext } from 'react'
 import { DataContext } from '../../store/globalState'
 import { addToCart } from '../../store/actions'
+import Image from 'next/image'
 
 const ProductItem = ({product, handleCheck}) => {
     const { state, dispatch } = useContext(DataContext)
@@ -26,7 +27,7 @@ const ProductItem = ({product, handleCheck}) => {
 
     return(
       <div className="max-w-xs rounded overflow-hidden shadow-lg my-2">
-  <img
+  <Image
     className="w-full max-w-sm max-h-44 object-cover"
     src={product.imgUrl}
     alt="Sunset in the mountains"
