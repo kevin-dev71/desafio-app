@@ -4,6 +4,6 @@ module.exports = {
   },
   reactStrictMode: true,
   images: {
-    domains: ['https://user-images.githubusercontent.com'],
+    domains: ['https://images.unsplash.com'],
   }
 }

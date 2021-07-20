@@ -20,10 +20,7 @@ const CartItem = ({ item, dispatch, cart }) => {
         {" "}
         {/* product */}
         <div className="w-20">
-          <Image
-            className="h-24"
-            src={item.imgUrl}
-          />
+          
         </div>
         <div className="flex flex-col justify-between ml-4 flex-grow">
           <span className="font-bold text-sm">{item.name}</span>

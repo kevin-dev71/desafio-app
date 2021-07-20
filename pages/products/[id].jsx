@@ -15,7 +15,7 @@ const DetailProduct = (props) => {
                 <title>Product detail</title>
             </Head>
         {product.name}
-        <Image src={product.imgUrl} alt="" />
+        
             
         </div>
     )

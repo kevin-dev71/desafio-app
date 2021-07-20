@@ -27,11 +27,7 @@ const ProductItem = ({product, handleCheck}) => {
 
     return(
       <div className="max-w-xs rounded overflow-hidden shadow-lg my-2">
-  <Image
-    className="w-full max-w-sm max-h-44 object-cover"
-    src={product.imgUrl}
-    alt="Sunset in the mountains"
-  />
+  
   <div className="px-6 py-4">
     <div className="font-bold text-xl mb-2">{product.name}</div>
     
