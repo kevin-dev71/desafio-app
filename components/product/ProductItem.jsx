@@ -29,8 +29,10 @@ const ProductItem = ({product, handleCheck}) => {
       <div className="max-w-xs rounded overflow-hidden shadow-lg my-2">
   
   <div className="px-6 py-4">
-    <div className="font-bold text-xl mb-2">{product.name}</div>
-    
+    <div className="font-bold text-xl mb-2">{product.name}</div>    
+  </div>
+  <div className="px-6 py-4 relative">
+      <Image width="300" height="200" src={product.imgUrl} alt={product.name}  objectFit="cover" />
   </div>
   <div className="px-6 py-4">
     <span className="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">
